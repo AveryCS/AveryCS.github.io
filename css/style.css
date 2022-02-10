@@ -9,12 +9,19 @@ header{
     
 
 }
+header > h1{
+    color: #0d2a38;
+    font-size: 3rem;
+}
 header > h2{
     padding-bottom: 15px;
     color: #0d2a38;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
-header > h1{
-    color: #0d2a38;
+
+header > h3{
+    justify-content: center;
 }
 .main_links>ul{
     display: flex; 
@@ -49,22 +56,26 @@ header > h1{
     color: #b9bdc6;
     text-align: center;
     border-radius: 25px;
+    height: 3vh;
+    width: auto;
     
 }
 .project_title>h3{
     color: #b9bdc6;
     text-align: center;
     
+    
 }
 .project_description_paragraphs{
     background-color: #b9bdc6;
     table-layout: fixed;
-    height: 250px; 
+    height: 30vh; 
+    width: auto;
     line-height: 25px;
-   font-size: 20px;
+   font-size: 1vw;
    padding-left: 10px;
    padding-right: 10px;
-   padding-bottom: 150p;
+   padding-bottom: 10px;
    border-radius: 25px;
 }
 header > h1 {
@@ -83,32 +94,37 @@ header > h2 {
 .about_main_content{
     display: flex;
     flex-direction:column;
-    width: 40%;
-    height:auto ;
-    padding-left: 20%;
+    width: 60%;
+    padding-left: 10%;
+    table-layout: fixed;
+    justify-content: center;
+    
     
 }
+
 
 .about_main_content >h2{
     background-color: #23607f;
     display: flex;
     justify-content: center;
-    size: adjust 20px;
+    size: 20px;
     color: #b9bdc6;
-    width: 780px;
-    height: 33px;
+    width: 100%;
+    height: 10%;
     border-radius: 25px;
     
 }
 .about_main_content > p{
     background-color: #b9bdc6;;
-    width: 780px; 
-    height: 200px;  
+    width: 100%; 
+    height: 100%;  
     line-height: 25px;
    font-size: 20px;
-   padding-left: 10px;
-   padding-right: 10px;
    border-radius: 25px;
+}
+.aboutParagraph{
+    padding: 1em 1em 1em 1em;
+    
 }
 .project_header{
     display: flex;
@@ -134,19 +150,26 @@ header > h2 {
   
 
 }
-.picture{
-
-    justify-content: left;
-    width: 300px ;
-    height: auto;
-    padding-left: 150px;
-    
-}
 .photo_with_about_section{
     display: flex;
     padding-top: 0px;
-   
+    justify-content: center;
+    width: 90vw;
+    align-items: center;
+
 }
+.picture{
+
+    width: 25%;
+    height: auto;
+    padding-left: 10px;
+    
+}
+.sunflowerpicture{
+    width: 100%;
+}
+
+  
 
 
 
@@ -163,6 +186,7 @@ header > h2 {
     border-width: 5p;
     padding: 20px 20px;
     border-radius: 25px;
+    width: 95vw;
 }
 .skills > h1{
     display: flex;
@@ -170,6 +194,11 @@ header > h2 {
     padding-top: 150px; 
     padding-bottom: 60px;
 }
+.skills{
+    width: 90 vw;
+    height: auto;
+}
+
 .contact{
     display: flex;
     flex-direction:column;
@@ -193,6 +222,18 @@ header > h2 {
     
     .project_bubble:hover{
         transform: translateY(0) scale(1.2);  
+    }
+    @media screen and (max-width: 1200px){
+        .project_main_content{
+            height:auto;
+            
+        }
+        .project_description_paragraphs{
+            font-size: .55rem;
+        }
+
+    }
+        
     }
 
 
